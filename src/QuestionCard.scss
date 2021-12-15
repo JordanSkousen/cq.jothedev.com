@@ -1,0 +1,244 @@
+@import "./App.scss";
+
+.countryItem { 
+  display: inline-flex;
+  align-self: center;
+  align-items: center;
+  width: auto;
+  .flag-icon {
+    margin-right: 10px;
+  }
+  .shadowed {
+    filter: drop-shadow(2px 4px 6px black);
+  }
+}
+
+.transBox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: transform 1s;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+  height: calc(100vh - 300px);
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 100px;
+  padding: 50px;
+  border-radius: 100px;
+  h2 {
+    font-size: 3vmax;
+    margin: 0;
+    font-weight: normal;
+    b {
+      background: linear-gradient(-45deg, lighten($purple, 10%) 0%, lighten($blue, 10%) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(2px 4px 6px black);
+    }
+  }
+  .intro {
+    font-size: 2vmax;
+    margin-bottom: 20px;
+    font-style: oblique;
+    color:rgb(255, 255, 255, 0.6);
+  }
+}
+
+.questionBack {
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    margin: 0;
+    letter-spacing: 1.5vmax;
+    text-align: center;
+  }
+  h2 {
+    margin: 3vmin;
+  }
+  .exp {
+    border: 5px dashed rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.75vmin;
+    .country, .countryScore {
+      font-weight: bold;
+    }
+    .country {
+      font-size: 2.5vmin;
+    }
+    .countryScore { 
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  .spacer { 
+    flex: 1;
+  }
+  .next {
+    button {
+      border: 2px solid white;
+      color: white;
+      transition: transform 0.25s, border 1s;
+    }
+  }
+  .flag-icon {
+    filter: drop-shadow(2px 4px 6px black);
+  }
+}
+
+.buttonGrid {
+  display: grid;
+  margin-top: 1.5vmax;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 25% 25% 25% 25%;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    font-size: 4vmax;
+    filter: drop-shadow(2px 4px 6px black);
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    &:active {
+      background: rgba(255, 255, 255, 0.7);
+      color: white;
+    }
+    b {
+      margin-right: 20px;
+    }
+  }
+}
+
+.flip {
+  animation: flip-card 1s cubic-bezier(.38,.01,0,.98);
+  animation-fill-mode: backwards;
+}
+
+.backsideFlip {
+  visibility: visible;
+  animation: flip-card-back 1s cubic-bezier(.38,.01,0,.98);
+  animation-fill-mode: backwards;
+}
+
+.backside {
+ // opacity: 0;
+ // visibility: hidden;
+ .questionQuote {
+    margin-top: 20px;
+    display: flex;
+    font-size: 2vmax;
+    align-items: center;
+      color: rgb(255, 255, 255, 0.6);
+      span {
+      font-size: 45px;
+      color: rgb(255, 255, 255, 0.2);
+      margin: -10px 5px;
+    }
+ }
+}
+
+.green {
+  background: rgb(15,128,24);
+  background: linear-gradient(0deg, rgba(15,128,24,1) 0%, rgba(28,195,95,1) 100%);
+  h2 {
+    color: white;
+    font-weight: bold;
+    b {
+      font-weight: normal;
+      background: none;
+      -webkit-background-clip: unset;
+      -webkit-text-fill-color: white;
+    }
+  }
+}
+.red {
+  background: rgb(128,15,15);
+  background: linear-gradient(0deg, rgba(128,15,15,1) 0%, rgba(210,23,23,1) 100%);
+  h2 {
+    color: white;
+    font-weight: bold;
+    b {
+      font-weight: normal;
+      background: none;
+      -webkit-background-clip: unset;
+      -webkit-text-fill-color: white;
+    }
+  }
+}
+
+@keyframes flip-card {
+  0% {
+    transform: rotateY(0deg);
+  }
+  15% {
+    transform: rotateY(25deg);
+  }
+  35% {
+    opacity: 100;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(-180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes flip-card-back {
+  0% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  15% {
+    transform: rotateY(205deg);
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 100;
+  }
+  100% {
+    transform: rotateY(0deg);
+    opacity: 100;
+  }
+}
+
+@media (max-width: 900px) {
+  .question {
+    margin: 50px;
+    border-radius: 50px;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 750px) {
+  .buttonGrid {
+    button {
+      font-size: 2.5vmax;
+    }
+  }
+  .question {
+    margin: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .question {
+    height: 75vh;
+  }
+}

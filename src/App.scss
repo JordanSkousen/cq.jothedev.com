@@ -1,0 +1,220 @@
+$default-font: 'Readex Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+sans-serif;
+$title-font: 'Righteous', $default-font;
+$purple: #8712f6;
+$blue: #364cce;
+
+.container {
+  background: $purple;
+  background: linear-gradient(-45deg, $purple 0%, $blue 100%);
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+  animation: scale-in 1.5s cubic-bezier(.25,.63,.33,1.01);
+  animation-fill-mode: forwards;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  animation: slide-in 2s cubic-bezier(.84,-0.01,.16,1), slow-rot 45s cubic-bezier(.25,.01,.66,.99) 2s infinite alternate;
+  animation-fill-mode: forwards;
+  font-family: $title-font;
+  h1 {
+    margin: 0;
+    font-size: 10vmax;
+    display: flex;
+    img {
+      height: 10vmax;
+      margin-top: 2vmax;
+      margin-left: 2vmax;
+    }
+  }
+  button {
+    font-family: $title-font;
+    margin-left: 45vmax;
+  }
+  .desc {
+    a {
+      text-decoration: none;
+      color: black;
+      transition: color 0.25s;
+      &:hover {
+        color: #111;
+      }
+    }
+  }
+}
+
+button {
+  font-family: $default-font;
+  background: none;
+  color: white;
+  font-size: 35px;
+  border: 2px solid white;
+  border-radius: 100px;
+  cursor: pointer;
+  padding: 10px 30px;
+  transition: transform 0.25s, background 0.25s;
+  &:hover {
+    transform: scale(102%);
+    background: rgba(255, 255, 255, 0.3);
+  }
+  &:active {
+    transform: scale(95%);
+    background: white;
+    color: $purple;
+  }
+}
+
+.left {
+  transform: translate(-100vw, 0px);
+}
+
+.right {
+  transform: translate(100vw, 0px);
+}
+
+b {
+  font-family: $title-font;
+}
+
+.score {
+  position: absolute;
+  bottom: 0;
+  font-size: 2vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  transition: transform 1s, bottom 1s;
+  .inner {
+    padding: 0px 20px;
+    background:rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transition: border-radius 1s;
+    b {
+      font-size: 4vmin;
+      background: linear-gradient(0deg, rgba(15,128,24,1) 0%, rgba(28,195,95,1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    span {
+      font-family: $title-font;
+    }
+    button {
+      display: block;
+      transition: height 1s, padding 1s, border 1s;
+      overflow: hidden;
+      font-size: 3vmax;
+    }
+  }
+  .collapsed {
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    border: none;
+  }
+}
+
+.scoreEnd {
+  bottom: 50vh;
+  transform: scale(200%);
+  .inner {
+    border-radius: 30px;
+    button {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.bottom {
+  transform: translate(0px, 200px);
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(94%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translate(0px, -71vh) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0px, 0vh) rotate(-5deg);
+  }
+}
+
+@keyframes slow-rot {
+  0% {
+    transform: rotate(-5deg)
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    h1 {
+      font-size: 7vmax;
+      img {
+        height: 7vmax;
+      }
+    }
+    .desc {
+      width: 70vw;
+      text-align: center;
+      margin-top: 10px;
+    }
+    button {
+      margin-left: 0;
+      margin-top: 40px;
+    }
+  }
+  .score {
+    font-size: 2.5vmax;
+    .inner {
+      b {
+        font-size: 7vmax;
+      }
+    }
+  }
+  .scoreEnd {
+    transform: scale(150%);
+    bottom: 43vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    h1 {
+      font-size: 6vmax;
+      img {
+        height: 6vmax;
+        margin-top: 1.5vmax;
+      }
+    }
+    button {
+      margin-top: 20px;
+    }
+  }
+  .scoreEnd {
+    transform: scale(100%);
+  }
+}

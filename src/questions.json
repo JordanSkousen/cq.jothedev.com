@@ -1,0 +1,310 @@
+[
+  {
+    "range": [1, 6],
+    "template": "%i% %LOW_HIGH% in their life",
+    "%i%": [
+      "Family is",
+      "Friends are",
+      "Leisure time is",
+      "Politics are",
+      "Work is",
+      "Religion is"
+    ],
+    "low": "very important",
+    "high": "not at all important"
+  },
+  {
+    "range": [7, 17],
+    "template": "%i% an important thing to learn while growing up",
+    "%i%": [
+      "Good manners are",
+      "Independence is",
+      "Hard work is",
+      "The feeling of responsibility is",
+      "Imagination is",
+      "Tolerance and respect is",
+      "Being thrifty and saving money is",
+      "Determination and perserverance is",
+      "Religious faith is",
+      "Unselfishness is",
+      "Obedience is"
+    ],
+    "low": true
+  },
+  {
+    "range": [18, 26],
+    "template": "Wouldn't like to have %i% as neighbors",
+    "%i%": [
+      "drug addicts",
+      "people of a different race",
+      "people who have AIDS",
+      "immigrants/foreign workers",
+      "homosexuals",
+      "people of a different religion",
+      "heavy drinkers",
+      "unmarried couples living together",
+      "people who speak a different language"
+    ],
+    "low": true
+  },
+  {
+    "range": [27, 41],
+    "template": "%LOW_HIGH% that %i%",
+    "%i%": [
+      "one of their main goals in life is to make their parents proud",
+      "when a mother works for pay, the children suffer",
+      "men make better political leaders than women",
+      "a college education is more important for a man than for a woman",
+      "men make better business executives than women",
+      "being a housewife is just as fulfilling as working for pay",
+      "when jobs are scarce, men should have more right to a job than women",
+      "when jobs are scarce, employers should give priority to natives over immigrants",
+      "if a woman earns more money than her husband, it's almost certain to cause problems",
+      "homosexual couples are as good parents as other couples",
+      "it's their duty towards society to have children",
+      "adult children have the duty to provide long-term care for their parents",
+      "people who don't work turn lazy",
+      "work is a duty towards society",
+      "work should always come first, even if it means less spare time"
+    ],
+    "low": "Strongly agree",
+    "high": "Strongly disagree"
+  },
+  {
+    "range": [42, 42],
+    "template": "%LOW_HIGH%",
+    "low": "The entire way our society is organized must be radically changed by revolutionary action",
+    "high": "Our present society must be valiantly defended against all subversive forces"
+  },
+  {
+    "range": [43, 45],
+    "template": "If %i%, it would be a %LOW_HIGH% thing",
+    "%i%": [
+      "less importance was placed on work in everyone's lives",
+      "more emphasis was placed on the development of technology",
+      "more emphasis was placed on respect for authority"
+    ],
+    "low": "GOOD",
+    "high": "BAD"
+  },
+  { 
+    "range": [46, 46],
+    "template": "All things together, I am %LOW_HIGH%",
+    "low": "very happy",
+    "high": "not happy at all"
+  },
+  { 
+    "range": [47, 47],
+    "template": "The state of my health is %LOW_HIGH%",
+    "low": "very good",
+    "high": "very poor"
+  },
+  { 
+    "range": [48, 48],
+    "template": "I %LOW_HIGH% over my life",
+    "low": "have no control",
+    "high": "have great control"
+  },
+  { 
+    "range": [49, 50],
+    "template": "I am %LOW_HIGH% with %i%",
+    "%i%": [
+      "my life as a whole these days",
+      "the financial situtation of my household"
+    ],
+    "low": "very dissatisfied",
+    "high": "completely satisfied"
+  },
+  { 
+    "range": [51, 55],
+    "template": "In the past 12 months, my family has %LOW_HIGH% %i%",
+    "%i%": [
+      "gone hungry",
+      "felt unsafe from crime in my home",
+      "gone without medicine/medical treatment",
+      "gone without an income",
+      "gone without a shelter over our heads"
+    ],
+    "low": "often",
+    "high": "never"
+  },
+  { 
+    "range": [56, 56],
+    "template": "I am %LOW_HIGH% than my parents were at my age",
+    "low": "better off",
+    "high": "worse off"
+  },
+  { 
+    "range": [57, 57],
+    "template": "%LOW_HIGH%",
+    "low": "Most people can be trusted",
+    "high": "Should be very cautious about trusting others"
+  },
+  { 
+    "range": [58, 63],
+    "template": "I %LOW_HIGH% %i%",
+    "%i%": [
+      "my family",
+      "my neighborhood",
+      "the people I know personally",
+      "the people I've met for the first time",
+      "people of another religion",
+      "people of another nationality"
+    ],
+    "low": "completely trust",
+    "high": "do not trust"
+  },
+  { 
+    "range": [64, 89],
+    "template": "I have %LOW_HIGH% confidence in %i%",
+    "%i%": [
+      "the churches around me",
+      "the armed forces",
+      "the press",
+      "television",
+      "labor unions",
+      "the police",
+      "the courts",
+      "the government",
+      "political parties",
+      "parliament",
+      "the civil service",
+      "universities",
+      "elections",
+      "major companies",
+      "banks",
+      "environmental organizations",
+      "women's organizations",
+      "charitable or humanitarian organizations",
+      "the European Union (or similar multi-country organization)",
+      "the United Nations",
+      "the International Monetary Fund (IMF)",
+      "International Criminal Court (ICC)",
+      "the North Atlantic Treaty Organization (NATO)",
+      "the World Bank",
+      "the World Health Organization (WHO)",
+      "the World Trade Organization (WTO)"
+    ],
+    "low": "lots of",
+    "high": "no"
+  },
+  { 
+    "range": [90, 90],
+    "template": "International organizations should prioritize %LOW_HIGH%",
+    "low": "being effective",
+    "high": "being democratic"
+  },
+  { 
+    "range": [94, 103],
+    "template": "I %LOW_HIGH% %i%",
+    "%i%": [
+      "a church or religious organization",
+      "a sport team",
+      "an art, music or educational organization",
+      "a labor Union",
+      "a political party",
+      "an environmental organization",
+      "a professional association",
+      "a humanitarian or charitable organization",
+      "a consumer organization",
+      "a self-help/mutual aid group"
+    ],
+    "low": "am an active member of",
+    "high": "don't belong to"
+  },
+  { 
+    "range": [106, 106],
+    "template": "%LOW_HIGH%",
+    "low": "Incomes should be made more equal",
+    "high": "There should be greater monetary incentives for individual effort"
+  },
+  { 
+    "range": [107, 107],
+    "template": "%LOW_HIGH% ownership of business and industry should be increased",
+    "low": "Private",
+    "high": "Government"
+  },
+  { 
+    "range": [108, 108],
+    "template": "%LOW_HIGH%",
+    "low": "The government should take more responsibility to ensure that everyone is provided for",
+    "high": "People should take more responsibility to provide for themselves"
+  },
+  { 
+    "range": [109, 109],
+    "template": "%LOW_HIGH%",
+    "low": "Competition in the economy is good",
+    "high": "Competition in the economy is harmful"
+  },
+  { 
+    "range": [110, 110],
+    "template": "%LOW_HIGH%",
+    "low": "In the long run, hard work usually brings a better life",
+    "high": "Hard work doesn't generally bring success - it's more a matter of luck and connections"
+  },
+  { 
+    "range": [111, 111],
+    "template": "%LOW_HIGH%",
+    "low": "Protecting the environment should be top priority, even if it causes slower economic growth and some loss of jobs",
+    "high": "Economic growth and creating jobs should be top priority, even if the environment suffers to some extent"
+  },
+  { 
+    "range": [112, 112],
+    "template": "There is %LOW_HIGH% corruption in my country",
+    "low": "no",
+    "high": "abundant"
+  },
+  { 
+    "range": [113, 117],
+    "template": "%LOW_HIGH% the %i% are involved in corruption",
+    "%i%": [
+      "state authorities",
+      "business executives",
+      "local authorities",
+      "civil service providers (police, judiciary, civil servants, doctors, teachers)",
+      "journalists and media"
+    ],
+    "low": "None of the",
+    "high": "All of the"
+  },
+  { 
+    "range": [118, 118],
+    "template": "I think ordinary people %LOW_HIGH% have to bribe local officials and service providers (police, laywers, doctors, teachers, etc.) in order to get the services they need",
+    "low": "never",
+    "high": "always"
+  },
+  { 
+    "range": [119, 119],
+    "template": "I %LOW_HIGH% that on the whole, women are LESS corrupt than men",
+    "low": "strongly agree",
+    "high": "strongly disagree"
+  },
+  { 
+    "range": [120, 120],
+    "template": "There is %LOW_HIGH% in this country to being held accountable when giving/receiving bribes",
+    "low": "no risk",
+    "high": "a very high risk"
+  },
+  { 
+    "range": [121, 121],
+    "template": "Immigrants have had a %LOW_HIGH% impact on the development of my country",
+    "low": "very good",
+    "high": "very bad"
+  },
+  { 
+    "range": [122, 129],
+    "template": "I %LOW_HIGH% that immigration in my country has %i%",
+    "%i%": [
+      "filled important job vacancies",
+      "strengthened cultural diversity",
+      "increased the crime rate",
+      "given asylum to political refugees who are persecuted elsewhere",
+      "increased the risks of terrorism",
+      "offered people from poor countries a better living",
+      "increased unemployment",
+      "lead to social conflict"
+    ],
+    "low": "agree",
+    "high": "disagree"
+  }
+]
