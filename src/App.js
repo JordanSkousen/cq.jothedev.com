@@ -66,7 +66,7 @@ export default class App extends React.Component {
         <div className={`transBox ${questionNum > 0 ? "left" : ""}`}>
           <div className="title">
             <h1>Test your <img src={logo} alt="CQ"/></h1>
-            <div className="desc">Find out your Cultural Intelligence (CQ). Quiz generated from <a href="https://www.worldvaluessurvey.org/" target="_blank" rel="noreferrer">WorldValueSurvey</a> data.</div>
+            <div className="desc">Find out your Cultural Intelligence (CQ). Quiz generated from <a href="https://www.worldvaluessurvey.org/" target="_blank" rel="noreferrer">World Value Survey</a> data.</div>
             <button onClick={() => this.setState({questionNum: 1})}>Go <span class="material-icons">chevron_right</span></button>
           </div>
         </div>
