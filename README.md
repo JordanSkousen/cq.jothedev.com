@@ -5,3 +5,9 @@ This is a little quiz game I made for a creative project final in a Communicatio
 ## Live Build
 
 [Visit the website here](https://cq.jothedev.com)!
+
+### Attributions
+
+Flag icons from [flag-icon-css](https://github.com/lipis/flag-icons)
+
+[World Value Survey Wave 7 Data](https://www.worldvaluessurvey.org/WVSDocumentationWV7.jsp)
