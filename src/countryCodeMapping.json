@@ -42,11 +42,11 @@
   "31": "Azerbaijan",
   "288": "Ghana",
   "508": "Mozambique",
-  "891": "Serbia and Montenegro",
   "50": "Bangladesh",
   "292": "Gibraltar",
   "104": "Myanmar",
   "911": "Serbia",
+  "688": "Serbia",
   "52": "Barbados",
   "300": "Greece",
   "912": "Montenegro",
@@ -167,5 +167,6 @@
   "702": "Singapore",
   "222": "El Salvador",
   "458": "Malaysia",
-  "703": "Slovakia"
+  "703": "Slovakia",
+  "446": "Macao"
 }

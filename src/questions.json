@@ -1,7 +1,7 @@
 [
   {
     "range": [1, 6],
-    "template": "%i% %LOW_HIGH% in their life",
+    "template": "%i% %LOW_HIGH% in my life",
     "%i%": [
       "Family is",
       "Friends are",
@@ -33,7 +33,7 @@
   },
   {
     "range": [18, 26],
-    "template": "Wouldn't like to have %i% as neighbors",
+    "template": "I wouldn't like to have %i% as neighbors",
     "%i%": [
       "drug addicts",
       "people of a different race",
@@ -204,7 +204,7 @@
       "a labor Union",
       "a political party",
       "an environmental organization",
-      "a professional association",
+      "a professional association (nonprofit business)",
       "a humanitarian or charitable organization",
       "a consumer organization",
       "a self-help/mutual aid group"
@@ -256,7 +256,7 @@
   },
   { 
     "range": [113, 117],
-    "template": "%LOW_HIGH% the %i% are involved in corruption",
+    "template": "%LOW_HIGH% of the %i% are involved in corruption",
     "%i%": [
       "state authorities",
       "business executives",
@@ -264,8 +264,8 @@
       "civil service providers (police, judiciary, civil servants, doctors, teachers)",
       "journalists and media"
     ],
-    "low": "None of the",
-    "high": "All of the"
+    "low": "None",
+    "high": "All"
   },
   { 
     "range": [118, 118],
@@ -306,5 +306,368 @@
     ],
     "low": "agree",
     "high": "disagree"
+  },
+  {
+    "range": [130, 130],
+    "template": "The government should %LOW_HIGH% from other countries to work in our country",
+    "low": "let anyone",
+    "high": "prohibit anyone"
+  },
+  {
+    "range": [131, 131],
+    "template": "I feel %LOW_HIGH% secure these days",
+    "low": "very secure",
+    "high": "not at all"
+  },
+  {
+    "range": [132, 138],
+    "template": "%i% %LOW_HIGH% frequently in my neighborhood",
+    "%i%": [
+      "Robberies occur",
+      "Alcohol consumption in the streets occur",
+      "Police or military interefering with people's private life occurs",
+      "Racist behavior occurs",
+      "Drug sales in the streets occur",
+      "Street violence and fights occur",
+      "Sexual harassment occurs"
+    ],
+    "low": "very",
+    "high": "not at all"
+  },
+  {
+    "range": [139, 141],
+    "template": "I usually %i%, because I'm worried about my safety",
+    "%i%": [
+      "don't carry much money with me",
+      "prefer to not go out at night",
+      "carry a knife, gun or other weapon"
+    ],
+    "low": true
+  },
+  {
+    "range": [142, 143],
+    "template": "I am %LOW_HIGH% worried about %i%",
+    "%i%": [
+      "losing my job or not finding a job",
+      "not being able to give my children a good education"
+    ],
+    "low": "very",
+    "high": "not at all"
+  },
+  {
+    "range": [144, 144],
+    "template": "I %LOW_HIGH% the victim of a crime during the past year",
+    "low": "was",
+    "high": "was not"
+  },
+  {
+    "range": [145, 145],
+    "template": "An immediate family member %LOW_HIGH% the victim of a crime during the past year",
+    "low": "was",
+    "high": "was not"
+  },
+  {
+    "range": [146, 148],
+    "template": "I am %LOW_HIGH% worried about %i%",
+    "%i%": [
+      "a war involving my country",
+      "a terrorist attack",
+      "a civil war"
+    ],
+    "low": "very",
+    "high": "not at all"
+  },
+  {
+    "range": [149, 149],
+    "template": "If I had to choose between freedom and equality, I would choose %LOW_HIGH%",
+    "low": "freedom",
+    "high": "equality"
+  },
+  {
+    "range": [150, 150],
+    "template": "If I had to choose between freedom and security, I would choose %LOW_HIGH%",
+    "low": "freedom",
+    "high": "security"
+  },
+  {
+    "range": [151, 151],
+    "template": "If there was another war, I %LOW_HIGH% be willing to fight for my country",
+    "low": "would",
+    "high": "would NOT"
+  },
+  {
+    "range": [158, 162],
+    "template": "I completely %LOW_HIGH% that %i%",
+    "%i%": [
+      "science and technology are making our lives healthier, easier, and more comfortable",
+      "because of science and technology, there will be more opportunities for the next generation",
+      "we depend too much on science and not enough on faith",
+      "one of the bad effects of science is that it breaks down people's ideas of right and wrong",
+      "it's not important for me to know about science in my daily life"
+    ],
+    "low": "disagree",
+    "high": "agree"
+  },
+  {
+    "range": [163, 163],
+    "template": "The world is a lot %LOW_HIGH% off because of science and technology",
+    "low": "worse",
+    "high": "better"
+  },
+  {
+    "range": [164, 164],
+    "template": "God is %LOW_HIGH% important in my life",
+    "low": "not at all",
+    "high": "very"
+  },
+  {
+    "range": [165, 168],
+    "template": "I %LOW_HIGH% in %i%",
+    "%i%": [
+      "God",
+      "life after death",
+      "the existence of hell",
+      "the existence of heaven"
+    ],
+    "low": "believe",
+    "high": "do not believe"
+  },
+  {
+    "range": [169, 170],
+    "template": "I strongly %LOW_HIGH% that %i%",
+    "%i%": [
+      "whenever science and religion conflict, religion is always right",
+      "the only acceptable religion is my religion"
+    ],
+    "low": "agree",
+    "high": "disagree"
+  },
+  {
+    "range": [171, 171],
+    "template": "I attend religious services %LOW_HIGH%",
+    "low": "more than once a week",
+    "high": "practically never"
+  },
+  {
+    "range": [172, 172],
+    "template": "I pray %LOW_HIGH%",
+    "low": "several times a day",
+    "high": "practically never"
+  },
+  {
+    "range": [173, 173],
+    "template": "I would say that I'm %LOW_HIGH%",
+    "low": "a religious person",
+    "high": "an atheist"
+  },
+  {
+    "range": [174, 174],
+    "template": "The basic meaning of religion is to %LOW_HIGH%",
+    "low": "follow religious norms and ceremonies",
+    "high": "do good to other people"
+  },
+  {
+    "range": [175, 175],
+    "template": "The basic meaning of religion is to make sense of life %LOW_HIGH%",
+    "low": "after death",
+    "high": "in this world"
+  },
+  {
+    "range": [176, 176],
+    "template": "I %LOW_HIGH% that nowadays one often has trouble deciding which moral rules are the right ones to follow",
+    "low": "completely agree",
+    "high": "completely disagree"
+  },
+  {
+    "range": [177, 195],
+    "template": "%i% is %LOW_HIGH% justifiable",
+    "%i%": [
+      "Claiming government benefits to which you are not entitled",
+      "Avoiding a fare on public transport",
+      "Stealing property",
+      "Cheating on taxes, if you have a chance,",
+      "Someone accepting a bribe in the course of their duties",
+      "Homosexuality",
+      "Prostitution",
+      "Abortion",
+      "Divorce",
+      "Sex before marriage",
+      "Suicide",
+      "Euthanasia",
+      "A man beating his wife",
+      "Parents beating children",
+      "Violence against other people",
+      "Terrorism as a political, ideological or religious mean",
+      "Having casual sex",
+      "Political violence",
+      "The death penalty"
+    ],
+    "low": "never",
+    "high": "always (or more often)"
+  },
+  {
+    "range": [196, 198],
+    "template": "My country's government %LOW_HIGH% have the right to %i%",
+    "%i%": [
+      "keep people under video surveillance in public areas",
+      "monitor all e-mails and any other information exchanged on the Internet",
+      "collect information about anyone living in this country without their knowledge"
+    ],
+    "low": "should",
+    "high": "should NOT"
+  },
+  {
+    "range": [199, 199],
+    "template": "I am %LOW_HIGH% interested in politics",
+    "low": "very",
+    "high": "not at all"
+  },
+  {
+    "range": [200, 200],
+    "template": "When I get together with friends, we %LOW_HIGH% discuss political matters",
+    "low": "frequently",
+    "high": "never"
+  },
+  {
+    "range": [201, 208],
+    "template": "I %HIGH%use %i% to obtain news about the world%LOW%",
+    "%i%": [
+      "the newspaper",
+      "TV news",
+      "radio news",
+      "a phone",
+      "email",
+      "the Internet",
+      "social media",
+      "conversations with others"
+    ],
+    "low": " daily",
+    "high": "never "
+  },
+  {
+    "range": [209, 220],
+    "template": "%LOW_HIGH% %i%",
+    "%i%": [
+      "signed a petition for political action",
+      "joined in a boycott for political action",
+      "attended a peacful demonstration for political action",
+      "joined a strike for political action",
+      "donated to a social group or political campaign",
+      "contacted a government official",
+      "encouraged others to take action about political issues",
+      "encouraged others to vote",
+      "searched for information about politics and political events on the Internet",
+      "signed an electronic political petition on the Internet",
+      "encouraged other people to take any form of political action on the Internet",
+      "organized political activities, events, or protests on the Internet"
+    ],
+    "low": "In the past, I have",
+    "high": "I would never and have never"
+  },
+  {
+    "range": [221, 222],
+    "template": "I always vote at the %i% level",
+    "%i%": [
+      "local",
+      "national"
+    ],
+    "low": true
+  },
+  {
+    "range": [224, 233],
+    "template": "It's %LOW_HIGH% the case that %i% in my country's elections",
+    "%i%": [
+      "votes are counted fairly",
+      "opposing candidates are prevented from running",
+      "TV news favors the governing party",
+      "voters are bribed",
+      "journalists provide fair coverage of elections",
+      "election officials are fair",
+      "rich people buy elections",
+      "voters are threatened with violence at the polls",
+      "voters are offered a genuine choice in the elections",
+      "women have equal opportunities to run the office"
+    ],
+    "low": "very often",
+    "high": "never"
+  },
+  {
+    "range": [234, 234],
+    "template": "Having honest elections is %LOW_HIGH% important to me",
+    "low": "very",
+    "high": "not at all"
+  },
+  {
+    "range": [235, 239],
+    "template": "%i% is a very %LOW_HIGH% way of governing my country",
+    "%i%": [
+      "Having a strong leader who does not have to bother with parliament and elections",
+      "Having experts, not government, make decisions according to what they think is best for the country",
+      "Having the army rule",
+      "Having a democratic political system",
+      "Having a system governed by religious law in which there are no political parties or elections"
+    ],
+    "low": "good",
+    "high": "bad"
+  },
+  {
+    "range": [241, 249],
+    "template": "%i% is %LOW_HIGH% essential characteristic of democracy",
+    "%i%": [
+      "Governments taxing the rich and subsidizing the poor",
+      "Religious authorities ultimately interpreting the laws",
+      "People choosing their leaders in free elections",
+      "People receiving state aid for unemployment",
+      "The army taking over when the government is incompetent",
+      "Civil rights protecting people from state oppression",
+      "The state making people's incomes equal",
+      "People obeying their rulers",
+      "Women having the same rights as men"
+    ],
+    "low": "NOT an",
+    "high": "an"
+  },
+  {
+    "range": [250, 250],
+    "template": "It is %LOW_HIGH% important that I live in a country that's governed democratically",
+    "low": "not at all",
+    "high": "absolutely"
+  },
+  {
+    "range": [251, 251],
+    "template": "My country is %LOW_HIGH% being governed democratically",
+    "low": "not at all",
+    "high": "completely"
+  },
+  {
+    "range": [252, 252],
+    "template": "I am %LOW_HIGH% satisfied with how the political system is functioning in my country",
+    "low": "not at all",
+    "high": "completely"
+  },
+  {
+    "range": [253, 253],
+    "template": "In my country, there is %LOW_HIGH% respect for individual humans rights nowadays",
+    "low": "a great deal of",
+    "high": "NO"
+  },
+  {
+    "range": [254, 254],
+    "template": "I am %LOW_HIGH% proud to be part of my country's nationality",
+    "low": "very",
+    "high": "not at all"
+  },
+  {
+    "range": [255, 259],
+    "template": "I feel %LOW_HIGH% close to %i%",
+    "%i%": [
+      "my village, town or city",
+      "my county, region or district",
+      "my country",
+      "my continent (Europe, Asia, etc.)",
+      "the World"
+    ],
+    "low": "very",
+    "high": "not at all"
   }
 ]

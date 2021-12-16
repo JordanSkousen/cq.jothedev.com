@@ -16,6 +16,26 @@ $blue: #364cce;
   animation-fill-mode: forwards;
 }
 
+.permaHome {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 20px;
+  filter: drop-shadow(2px 2px 4px black);
+  a {
+    $link: rgb(14, 157, 240);
+    color: $link;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: lighten($link, 10%);
+    }
+    &:active {
+      color: darken($link, 10%);
+    }
+  }
+}
+
 .title {
   display: flex;
   flex-direction: column;

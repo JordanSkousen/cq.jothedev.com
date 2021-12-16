@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./App.scss";
+import generate from "./util";
 import logo from "./logo.png";
 import questionsData from "./questions.json"
 import answers from "./answerData.json"
@@ -19,43 +20,8 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    const questions = shuffleArray(questionsData.map(q => {
-      let arr = [];
-      for (let i = q.range[0]; i <= q.range[1]; i++) {
-        if (q.low === true) {
-          arr.push({num: i, low: true});
-        }
-        else {
-          arr.push({num: i, low: false});
-          arr.push({num: i, low: true});
-        }
-      }
-      return arr;
-    }).flat()).slice(0, 10);
     this.setState({
-      questions: questions.map((question, i) => {
-        const questionSchema = questionsData.filter(q => question.num >= q.range[0] && question.num <= q.range[1])[0];
-        let questionTitle = questionSchema.template.replace("%LOW_HIGH%", question.low ? questionSchema.low : questionSchema.high);
-        if (questionTitle.includes("%i%")) {
-          questionTitle = questionTitle.replace("%i%", questionSchema["%i%"][question.num - questionSchema.range[0]]);
-        }
-        let topFive = answers.filter(a => a.Num === question.num)[0];
-        if (question.low) {
-          topFive = topFive.LowestCountries;
-        }
-        else {
-          topFive = topFive.HighestCountries;
-        }
-        const answer = topFive[0].CountryNum;
-        return {
-          low: question.low,
-          num: i + 1,
-          title: questionTitle,
-          choices: shuffleArray(shuffleArray(countryCodes.filter(code => code !== answer)).slice(0, 3).concat([answer])),
-          correctAnswer: answer,
-          topFive: topFive,
-        };
-      }),
+      questions: generate(10),
     });
   }
   
@@ -66,7 +32,7 @@ export default class App extends React.Component {
         <div className={`transBox ${questionNum > 0 ? "left" : ""}`}>
           <div className="title">
             <h1>Test your <img src={logo} alt="CQ"/></h1>
-            <div className="desc">Find out your Cultural Intelligence (CQ). Quiz generated from <a href="https://www.worldvaluessurvey.org/" target="_blank" rel="noreferrer">World Value Survey</a> data.</div>
+            <div className="desc">Find out your Cultural Intelligence (CQ). Quiz generated from 2017-2021 <a href="https://www.worldvaluessurvey.org/" target="_blank" rel="noreferrer">World Value Survey</a> data.</div>
             <button onClick={() => this.setState({questionNum: 1})}>Go <span class="material-icons">chevron_right</span></button>
           </div>
         </div>
@@ -85,16 +51,10 @@ export default class App extends React.Component {
             <button className={`${questionNum === 11 ? "" : "collapsed"}`} onClick={() => window.location.reload()}>Play again?</button>
           </div>
         </div>
+        <div className="permaHome">
+          <a href="https://jothedev.com"><span class="material-icons">chevron_left</span>&nbsp;<span class="material-icons">home</span></a>
+        </div>
       </div>
     );
   }
-}
-
-//https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
-function shuffleArray(a) {
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
 }
