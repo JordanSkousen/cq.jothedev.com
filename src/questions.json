@@ -321,7 +321,7 @@
   },
   {
     "range": [132, 138],
-    "template": "%i% %LOW_HIGH% frequently in my neighborhood",
+    "template": "%i% %LOW_HIGH%frequently in my neighborhood",
     "%i%": [
       "Robberies occur",
       "Alcohol consumption in the streets occur",
@@ -331,8 +331,8 @@
       "Street violence and fights occur",
       "Sexual harassment occurs"
     ],
-    "low": "very",
-    "high": "not at all"
+    "low": "very ",
+    "high": "in"
   },
   {
     "range": [139, 141],
@@ -659,7 +659,7 @@
   },
   {
     "range": [255, 259],
-    "template": "I feel %LOW_HIGH% close to %i%",
+    "template": "I %HIGH%feel %LOW%close to %i%",
     "%i%": [
       "my village, town or city",
       "my county, region or district",
@@ -667,7 +667,7 @@
       "my continent (Europe, Asia, etc.)",
       "the World"
     ],
-    "low": "very",
-    "high": "not at all"
+    "low": "very ",
+    "high": "do not "
   }
 ]
