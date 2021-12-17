@@ -8,6 +8,6 @@ This is a little quiz game I made for a creative project final in a Communicatio
 
 ### Attributions
 
-Flag icons from [flag-icon-css](https://github.com/lipis/flag-icons)
+Flag icons from [the Flagpedia CDN](https://flagpedia.net/download/api)
 
 [World Value Survey Wave 7 Data](https://www.worldvaluessurvey.org/WVSDocumentationWV7.jsp)
