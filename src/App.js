@@ -1,11 +1,8 @@
 import React from "react";
 
 import "./App.scss";
-import generate, {noDuplicates, flagSVG} from "./util";
+import generate from "./util";
 import logo from "./logo.png";
-import questionsData from "./questions.json"
-import answers from "./answerData.json"
-import countryCodes from "./countryCodes.json"
 import QuestionCard from "./QuestionCard";
 
 export default class App extends React.Component {
@@ -54,15 +51,6 @@ export default class App extends React.Component {
         </div>
         <div className="permaHome">
           <a href="https://jothedev.com"><span className="material-icons">chevron_left</span>&nbsp;<span className="material-icons">home</span></a>
-        </div>
-        <div className="hiddenFlags">
-          {/*noDuplicates(questions
-            .map(q => q.choices
-              .concat(q.topFive
-                .map(tf => tf.CountryNum)
-              )
-            )
-          ).map(cc => flagSVG(cc))*/}
         </div>
       </div>
     );
