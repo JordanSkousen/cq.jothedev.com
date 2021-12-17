@@ -24,7 +24,7 @@ export default function QuestionCard({left, right, question, incrementScore, onN
         <h2 className="intro">Which country had the most people agree with the following:</h2>
         <h2><b>Q{num}. </b> {title}.</h2>
         <div className="buttonGrid">
-          {choices.map((choice, i) => <Option index={i} onClick={() => {
+          {choices.map((choice, i) => <Option index={i} key={i} onClick={() => {
             setChosenOption(i + 1);
             if (correctAnswer === choice) {
               incrementScore();
@@ -47,7 +47,7 @@ export default function QuestionCard({left, right, question, incrementScore, onN
         </div>
         <div className="spacer"></div>
         <div className="next">
-          <button onClick={() => onNextClick()}>Next <span class="material-icons">chevron_right</span></button>
+          <button onClick={() => onNextClick()}>Next <span className="material-icons">chevron_right</span></button>
         </div>
       </div>
     </div> : null}

@@ -29,21 +29,22 @@ export default class App extends React.Component {
     const {questionNum, questions, score} = this.state;
     return (
       <div className="container">
-        <div className={`transBox ${questionNum > 0 ? "left" : ""}`}>
+        {questionNum <= 1 ? <div className={`transBox ${questionNum > 0 ? "left" : ""}`}>
           <div className="title">
             <h1>Test your <img src={logo} alt="CQ"/></h1>
             <div className="desc">Find out your Cultural Intelligence (CQ). Quiz generated from 2017-2021 <a href="https://www.worldvaluessurvey.org/" target="_blank" rel="noreferrer">World Value Survey</a> data.</div>
-            <button onClick={() => this.setState({questionNum: 1})}>Go <span class="material-icons">chevron_right</span></button>
+            <button onClick={() => this.setState({questionNum: 1})}>Go <span className="material-icons">chevron_right</span></button>
           </div>
-        </div>
+        </div> : null}
         {questions.map((q, i) => 
-          <QuestionCard
+          questionNum <= i + 2 && questionNum >= i ? <QuestionCard
             right={questionNum < i + 1}
             left={questionNum > i + 1}
+            key={i}
             question={q}
             incrementScore={() => this.setState({score: score + 1})}
             onNextClick={() => this.setState({questionNum: questionNum + 1})}
-          />  
+          /> : null  
         )}
         <div className={`score ${questionNum === 0 ? "bottom" : ""} ${questionNum === 11 ? "scoreEnd" : ""}`}>
           <div className="inner">
@@ -52,7 +53,7 @@ export default class App extends React.Component {
           </div>
         </div>
         <div className="permaHome">
-          <a href="https://jothedev.com"><span class="material-icons">chevron_left</span>&nbsp;<span class="material-icons">home</span></a>
+          <a href="https://jothedev.com"><span className="material-icons">chevron_left</span>&nbsp;<span className="material-icons">home</span></a>
         </div>
       </div>
     );
