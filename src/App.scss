@@ -16,6 +16,13 @@ $blue: #364cce;
   animation-fill-mode: forwards;
 }
 
+.flagSVG {
+  height: 1em;
+  display: inline;
+  margin-right: 1.5vmin;
+  filter: drop-shadow(2px 2px 4px black);
+}
+
 .permaHome {
   position: absolute;
   left: 0;
@@ -158,6 +165,10 @@ b {
 
 .bottom {
   transform: translate(0px, 200px);
+}
+
+.hiddenFlags {
+  visibility: hidden;
 }
 
 @keyframes scale-in {

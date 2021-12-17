@@ -1,6 +1,8 @@
 import questionsData from "./questions.json";
 import answers from "./answerData.json";
 import countryCodes from "./countryCodes.json";
+import countryCodeMapping from "./countryCodeMapping.json";
+import countryCodeMapping2Char from "./countryCodeMapping2Char.json";
 
 export default function generate(numOfQuestions) {
   let qs = shuffleArray(questionsData.map(q => 
@@ -35,6 +37,16 @@ export default function generate(numOfQuestions) {
   });
 }
 
+export function flagSVG(code) {
+  const charCode = countryCodeMapping2Char[code]?.toLowerCase() || "xx";  
+  /*<span className={`flag-icon flag-icon-${countryCodeMapping2Char[code]?.toLowerCase() || "xx"}`}></span>*/
+  return <img className="flagSVG"
+    src={`https://flagcdn.com/120x90/${charCode}.png`}
+    srcset={`https://flagcdn.com/240x180/${charCode}.png 2x`}
+    alt={`Flag of ${countryCodeMapping[code] || "(unknown country)"}`}
+  />;
+}
+
 //https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
 export function shuffleArray (a) {
   for (let i = a.length - 1; i > 0; i--) {
@@ -42,4 +54,8 @@ export function shuffleArray (a) {
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
+}
+
+export function noDuplicates(arr) {
+  return arr.reduce((acc, val) => acc.concat(val.filter(v => !acc.includes(v))), []);
 }

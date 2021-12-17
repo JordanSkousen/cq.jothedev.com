@@ -3,7 +3,7 @@ import React from "react";
 import "./css/flag-icons.css";
 import "./QuestionCard.scss";
 import countryCodeMapping from "./countryCodeMapping.json";
-import countryCodeMapping2Char from "./countryCodeMapping2Char.json";
+import {flagSVG} from "./util";
 
 const letters = ["A", "B", "C", "D"];
 function Option(props) {
@@ -55,7 +55,7 @@ export default function QuestionCard({left, right, question, incrementScore, onN
 }
 
 function DisplayCountryCode(code) {
-  return <span className="countryItem"><span className={`flag-icon flag-icon-${countryCodeMapping2Char[code]?.toLowerCase() || "xx"}`}></span> {countryCodeMapping[code] || "Unknown"}</span>;
+  return <span className="countryItem">{flagSVG(code)}{countryCodeMapping[code] || "Unknown"}</span>;
 }
 
 function Round(num, to) {
